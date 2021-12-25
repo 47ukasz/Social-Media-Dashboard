@@ -97,11 +97,6 @@ body {
   margin: 2em 0;
 }
 
-.mainOverview {
-  -webkit-transform: translateY(-6%);
-          transform: translateY(-6%);
-}
-
 .mainOverview__card {
   margin-bottom: 3em;
   display: -webkit-box;
