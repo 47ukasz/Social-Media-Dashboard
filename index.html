@@ -12,7 +12,7 @@
 </head>
 <body>
     <header data-dark="header" class="header sectionPadding">
-        <div class="wrapper">
+        <div class="wrapper wrapper__header">
             <div class="header__followBox">
                 <h1 data-dark="textWhite" class="header__heading">Social Media Dashboard</h1>
                 <p data-dark="text" class="header__followers">Total Followers: 23,004</p>
@@ -92,6 +92,123 @@
             </div>
 
         </div>
+    </section>
+
+    <section class="dailyOverview wrapper sectionPadding">
+        <p data-dark="textWhite"  class="dailyOverview__heading">Overview - Today</p>
+
+        <div class="dailyOverview__row">
+            
+            <!-- Facebook -->
+            <div class="dailyOverview__box">
+            
+                <div data-dark="card" class="dailyOverview__card">
+                    <p data-dark="text" class="dailyOverview__card--text">
+                        Page Views
+                        <img src="./images/icon-facebook.svg" alt="" class="dailyOverview__card--img">
+                    </p>
+                    <p class="dailyOverview__card--numbers">
+                        <span data-dark="textWhite">87</span>
+                        <span class="dailyOverview__card--numbers-proc"><img src="./images/icon-up.svg" alt="" class="dailyOverview__card--icon"> 3%</span>
+                    </p>
+                </div>
+
+                <div data-dark="card" class="dailyOverview__card">
+                    <p data-dark="text" class="dailyOverview__card--text">
+                        Likes
+                        <img src="./images/icon-facebook.svg" alt="" class="dailyOverview__card--img">
+                    </p>
+                    <p class="dailyOverview__card--numbers">
+                        <span data-dark="textWhite">52</span>
+                        <span class="dailyOverview__card--numbers-proc dailyOverview__card--numbers-procRed"><img src="./images/icon-down.svg" alt="" class="dailyOverview__card--icon"> 2%</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Instagram -->
+            <div class="dailyOverview__box">
+            
+                <div data-dark="card" class="dailyOverview__card">
+                    <p data-dark="text" class="dailyOverview__card--text">
+                        Likes
+                        <img src="./images/icon-instagram.svg" alt="" class="dailyOverview__card--img">
+                    </p>
+                    <p class="dailyOverview__card--numbers">
+                        <span data-dark="textWhite">5462</span>
+                        <span class="dailyOverview__card--numbers-proc"><img src="./images/icon-up.svg" alt="" class="dailyOverview__card--icon"> 2257%</span>
+                    </p>
+                </div>
+
+                <div data-dark="card" class="dailyOverview__card">
+                    <p data-dark="text" class="dailyOverview__card--text">
+                        Profile Views
+                        <img src="./images/icon-instagram.svg" alt="" class="dailyOverview__card--img">
+                    </p>
+                    <p class="dailyOverview__card--numbers">
+                        <span data-dark="textWhite">52k</span>
+                        <span class="dailyOverview__card--numbers-proc"><img src="./images/icon-up.svg" alt="" class="dailyOverview__card--icon"> 1375%</span>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="dailyOverview__row">
+
+            <!-- Twitter -->
+            <div class="dailyOverview__box">
+            
+                <div data-dark="card" class="dailyOverview__card">
+                    <p data-dark="text" class="dailyOverview__card--text">
+                        Retweets
+                        <img src="./images/icon-twitter.svg" alt="" class="dailyOverview__card--img">
+                    </p>
+                    <p class="dailyOverview__card--numbers">
+                        <span data-dark="textWhite">117</span>
+                        <span class="dailyOverview__card--numbers-proc"><img src="./images/icon-up.svg" alt="" class="dailyOverview__card--icon"> 303%</span>
+                    </p>
+                </div>
+
+                <div data-dark="card" class="dailyOverview__card">
+                    <p data-dark="text" class="dailyOverview__card--text">
+                        Likes
+                        <img src="./images/icon-twitter.svg" alt="" class="dailyOverview__card--img">
+                    </p>
+                    <p class="dailyOverview__card--numbers">
+                        <span data-dark="textWhite">507</span>
+                        <span class="dailyOverview__card--numbers-proc"><img src="./images/icon-up.svg" alt="" class="dailyOverview__card--icon"> 553%</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Youtube -->
+            <div class="dailyOverview__box">
+            
+                <div data-dark="card" class="dailyOverview__card">
+                    <p data-dark="text" class="dailyOverview__card--text">
+                        Likes
+                        <img src="./images/icon-youtube.svg" alt="" class="dailyOverview__card--img">
+                    </p>
+                    <p class="dailyOverview__card--numbers">
+                        <span data-dark="textWhite">107</span>
+                        <span class="dailyOverview__card--numbers-proc dailyOverview__card--numbers-procRed"><img src="./images/icon-down.svg" alt="" class="dailyOverview__card--icon"> 19%</span>
+                    </p>
+                </div>
+
+                <div data-dark="card" class="dailyOverview__card">
+                    <p data-dark="text" class="dailyOverview__card--text">
+                        Total Views
+                        <img src="./images/icon-youtube.svg" alt="" class="dailyOverview__card--img">
+                    </p>
+                    <p class="dailyOverview__card--numbers">
+                        <span data-dark="textWhite" >1407</span>
+                        <span class="dailyOverview__card--numbers-proc dailyOverview__card--numbers-procRed"><img src="./images/icon-down.svg" alt="" class="dailyOverview__card--icon"> 12%</span>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
     </section>
 
     <script src="./main.js"></script>

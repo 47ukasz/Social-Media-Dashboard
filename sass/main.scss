@@ -49,7 +49,6 @@ body {
         }
 
         &--switch {
-            position: relative;
             padding: .3em 1.5em;
             background-color: $light-toggle;
             border-radius: 20px;
@@ -78,7 +77,16 @@ body {
 }
 
 .mainOverview {
-    // transform: translateY(-6%);
+    transform: translateY(-6%);
+    padding-bottom: 0;
+
+    &__row {
+        width: 100%;
+
+        &:nth-child(1) {
+            margin-bottom: 3em;
+        }
+    }
 
     &__card {
         margin-bottom: 3em;
@@ -90,7 +98,11 @@ body {
         background-color: $light-card-bg;
         overflow: hidden;
         transition: background-color .3s;
-    
+        
+        &:nth-child(2) {
+            margin-bottom: 0;
+        }
+
         &--line {
             width: 100%;
             height: 5px;
@@ -164,6 +176,62 @@ body {
 
 }
 
+.dailyOverview {
+    padding-top: 0;
+
+    &__heading {
+        margin-bottom: 1.5em;
+        font-size: 2rem;
+        font-weight: bold;
+        color: $light-text-second;
+        transition: color .3s;
+    }
+
+    &__card {
+        margin: 2em 0;
+        padding: 2em 2.5em;
+        border-radius: 8px;
+        width: 100%;
+        background-color: $light-card-bg;
+
+        &--img {
+            width: 22px;
+            height: 22px;
+        }
+
+        &--text, &--numbers {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        &--text {
+            font-size: 1.6rem;
+            color: $light-text;
+        }
+
+        &--numbers {
+            margin: 1em 0 .5em;
+            font-size: 2.2rem;
+
+            &-proc {
+                align-self: flex-end;
+                font-size: 1.4rem;
+                color: $lime-green;
+            }
+
+            &-procRed {
+                color: $bright-red;
+            }
+        }
+
+        &--icon {
+            height: 6px;
+        }
+    }
+}
+
 .switchToggled {
     background: $dark-toggle;
 }
@@ -191,4 +259,101 @@ body {
 
 .bodyToggled {
     background-color: $dark-bg;
+}
+
+@media (min-width: 768px) {
+
+    .mainOverview {
+
+        &__row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1em;
+        }
+
+        &__card {
+            margin-bottom: 0;
+            width: 48%;
+        }
+    }
+
+    .dailyOverview {
+
+        &__box {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__card {
+            width: 48%;
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+    
+    .header {
+        padding-bottom: 15em;
+
+        &__line {
+            display: none;
+        }
+
+        &__themeBox {
+            height: 30px;
+
+            &--variant {
+                margin-right: 1em;
+            }
+        }
+    }
+
+    .wrapper {
+
+        &__header {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    .mainOverview {
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-30%);
+    
+        &__row {
+            margin-bottom: 0;
+            margin-right: 4em;
+
+            &:nth-child(1) {
+                margin-bottom: 0;
+            }
+
+            &:nth-child(2) {
+                margin-right: 0em;
+            }
+        }
+    }
+
+    .dailyOverview {
+
+        &__box {
+            width: 49%;
+        }
+
+        &__row {
+            display: flex;
+            justify-content: space-between;  
+        }
+
+        &__card {
+            width: 48%;
+        }
+    }
+}
+
+@media (min-width: 1450px) {
+    .mainOverview, .dailyOverview {
+        padding: 0;
+    }
 }

@@ -68,7 +68,6 @@ body {
 }
 
 .header__themeBox--switch {
-  position: relative;
   padding: .3em 1.5em;
   background-color: #aeb3cb;
   border-radius: 20px;
@@ -97,6 +96,20 @@ body {
   margin: 2em 0;
 }
 
+.mainOverview {
+  -webkit-transform: translateY(-6%);
+          transform: translateY(-6%);
+  padding-bottom: 0;
+}
+
+.mainOverview__row {
+  width: 100%;
+}
+
+.mainOverview__row:nth-child(1) {
+  margin-bottom: 3em;
+}
+
 .mainOverview__card {
   margin-bottom: 3em;
   display: -webkit-box;
@@ -115,6 +128,10 @@ body {
   overflow: hidden;
   -webkit-transition: background-color .3s;
   transition: background-color .3s;
+}
+
+.mainOverview__card:nth-child(2) {
+  margin-bottom: 0;
 }
 
 .mainOverview__card--line {
@@ -193,6 +210,70 @@ body {
   color: #dc414c;
 }
 
+.dailyOverview {
+  padding-top: 0;
+}
+
+.dailyOverview__heading {
+  margin-bottom: 1.5em;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1e202a;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+.dailyOverview__card {
+  margin: 2em 0;
+  padding: 2em 2.5em;
+  border-radius: 8px;
+  width: 100%;
+  background-color: #f0f2fa;
+}
+
+.dailyOverview__card--img {
+  width: 22px;
+  height: 22px;
+}
+
+.dailyOverview__card--text, .dailyOverview__card--numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+}
+
+.dailyOverview__card--text {
+  font-size: 1.6rem;
+  color: #63687e;
+}
+
+.dailyOverview__card--numbers {
+  margin: 1em 0 .5em;
+  font-size: 2.2rem;
+}
+
+.dailyOverview__card--numbers-proc {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-size: 1.4rem;
+  color: #1db489;
+}
+
+.dailyOverview__card--numbers-procRed {
+  color: #dc414c;
+}
+
+.dailyOverview__card--icon {
+  height: 6px;
+}
+
 .switchToggled {
   background: -webkit-gradient(linear, left top, right top, from(#378fe6), color-stop(#38a9e4), color-stop(#39c2e3), color-stop(#3adae1), color-stop(#3bdfcd), color-stop(#3cddb3), color-stop(#3ddc9a), to(#3eda82));
   background: linear-gradient(90deg, #378fe6, #38a9e4, #39c2e3, #3adae1, #3bdfcd, #3cddb3, #3ddc9a, #3eda82);
@@ -222,5 +303,95 @@ body {
 
 .bodyToggled {
   background-color: #1e202a;
+}
+
+@media (min-width: 768px) {
+  .mainOverview__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 1em;
+  }
+  .mainOverview__card {
+    margin-bottom: 0;
+    width: 48%;
+  }
+  .dailyOverview__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .dailyOverview__card {
+    width: 48%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .header {
+    padding-bottom: 15em;
+  }
+  .header__line {
+    display: none;
+  }
+  .header__themeBox {
+    height: 30px;
+  }
+  .header__themeBox--variant {
+    margin-right: 1em;
+  }
+  .wrapper__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .mainOverview {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-transform: translateY(-30%);
+            transform: translateY(-30%);
+  }
+  .mainOverview__row {
+    margin-bottom: 0;
+    margin-right: 4em;
+  }
+  .mainOverview__row:nth-child(1) {
+    margin-bottom: 0;
+  }
+  .mainOverview__row:nth-child(2) {
+    margin-right: 0em;
+  }
+  .dailyOverview__box {
+    width: 49%;
+  }
+  .dailyOverview__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .dailyOverview__card {
+    width: 48%;
+  }
+}
+
+@media (min-width: 1450px) {
+  .mainOverview, .dailyOverview {
+    padding: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */
