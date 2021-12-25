@@ -1,0 +1,33 @@
+/// Light Theme
+
+$light-bg: hsl(0, 0%, 100%);
+$light-top-bg: hsl(225, 100%, 98%);
+$light-card-bg: hsl(227, 47%, 96%);
+$light-text: hsl(228, 12%, 44%);
+$light-text-second: hsl(230, 17%, 14%);
+
+/// Dark Theme
+
+$dark-bg: hsl(230, 17%, 14%);
+$dark-top-bg: hsl(232, 19%, 15%);
+$dark-card-bg: hsl(228, 28%, 20%);
+$dark-text: hsl(228, 34%, 66%);
+$dark-text-second: hsl(0, 0%, 100%);
+
+
+/// Social Media Colors
+
+$facebook: hsl(208, 92%, 53%);
+$twitter: hsl(203, 89%, 53%);
+$instagram: linear-gradient(90deg, #fdc468, #faa763, #f68a5d, #f26d59, #ee5459, #e9506d, #e44c82, #df4996);
+$youtube: hsl(348, 97%, 39%);
+
+/// Main Colors 
+
+$lime-green: hsl(163, 72%, 41%);
+$bright-red: hsl(356, 69%, 56%);
+
+/// Button Colors 
+
+$dark-toggle: linear-gradient(90deg, #378fe6, #38a9e4, #39c2e3, #3adae1, #3bdfcd, #3cddb3, #3ddc9a, #3eda82);
+$light-toggle: hsl(230, 22%, 74%);

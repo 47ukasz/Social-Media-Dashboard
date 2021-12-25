@@ -1,0 +1,194 @@
+@import './_colors';
+@import './_components';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: $light-bg;
+    transition: background-color .3s;
+}
+
+.header {
+    background-color: $light-top-bg;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding-bottom: 9em;
+    transition: background-color .3s;
+
+    &__heading {
+        font-size: 2.4rem;
+        color: $light-text-second;
+        transition: color .3s;
+    }
+
+    &__followers {
+        margin-top: .3em;
+        color: $light-text;
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+
+    &__themeBox {
+        display: flex;
+        justify-content: space-between;
+    
+        &--variant {
+            color: $light-text;
+            font-size: 1.4rem;
+            font-weight: bold;
+            align-self: center;
+        }
+
+        &--switch {
+            position: relative;
+            padding: .3em 1.5em;
+            background-color: $light-toggle;
+            border-radius: 20px;
+            border: none;
+            cursor: pointer;
+            
+            &-circle {
+                display: block;
+                height: 22px;
+                width: 22px;
+                background-color: $light-bg;
+                border-radius: 50%;
+                transform: translateX(-70%);
+                transition: transform .3s;
+            }
+        }
+    }
+
+    &__line {
+        background-color: $light-toggle;
+        height: 1px;
+        border: none;
+        margin: 2em 0;
+    }
+
+}
+
+.mainOverview {
+    transform: translateY(-6%);
+
+    &__card {
+        margin-bottom: 3em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        border-radius: 8px;
+        background-color: $light-card-bg;
+        overflow: hidden;
+        transition: background-color .3s;
+    
+        &--line {
+            width: 100%;
+            height: 5px;
+        
+            &-facebook {
+                background-color: $facebook;
+            }
+
+            &-twitter {
+                background-color: $twitter;
+            }
+
+            &-instagram {
+                background: $instagram;
+            }
+
+            &-youtube {
+                background-color: $youtube;
+            }
+        }
+
+        &--socialInfo {
+            margin: 2.2em 0;
+            display: flex;
+
+            &-name {
+                margin-left: .5em;
+                font-size: 1.4rem;
+                font-weight: bold;
+                align-self: center;
+                color: $light-text;
+            }
+            
+            &-img {
+                width: 23px;
+                height: 23px;
+            }
+        }
+        
+        &--followCount {
+            font-size: 6rem;
+            font-weight: bold;
+            color: $light-text-second;
+            transform: color .3s;
+        }
+
+        &--followText {
+            margin-top: .5em;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            color: $light-text;
+        }
+
+        &--newFollow {
+            margin: 3rem 0;
+            font-size: 1.4rem;
+            color: $lime-green;
+            font-weight: bold;
+        
+            &-icon {
+                width: 10px;
+                height: 7px;
+            }
+            
+            &-down {
+                color: $bright-red;
+            }
+        }
+    }
+
+}
+
+.switchToggled {
+    background: $dark-toggle;
+}
+
+.circleToggled {
+    transform: translateX(70%);
+    background-color: $dark-card-bg;
+}
+
+.cardToggled {
+    background-color: $dark-card-bg;
+}
+
+.headerToggled {
+    background-color: $dark-top-bg;
+}
+
+.textToggled {
+    color: $dark-text;
+}
+
+.textWhiteToggled {
+    color: $dark-text-second;
+}
+
+.bodyToggled {
+    background-color: $dark-bg;
+}

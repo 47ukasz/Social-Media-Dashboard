@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <header data-dark="header" class="header sectionPadding">
+        <div class="wrapper">
+            <div class="header__followBox">
+                <h1 data-dark="textWhite" class="header__heading">Social Media Dashboard</h1>
+                <p data-dark="text" class="header__followers">Total Followers: 23,004</p>
+                <hr data-dark="text" class="header__line">
+            </div>
+            <div class="header__themeBox">
+                <p data-dark="text" class="header__themeBox--variant">Dark Mode</p>
+                <button data-dark="btn" class="header__themeBox--switch">
+                    <span data-dark="circle" class="header__themeBox--switch-circle"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="mainOverview sectionPadding wrapper">
+        
+        <div class="mainOverview__row">
+            <!-- Facebook -->
+            <div data-dark="card" class="mainOverview__card">
+                <div class="mainOverview__card--line mainOverview__card--line-facebook"></div>
+                <div class="mainOverview__card--socialInfo">
+                    <img src="./images/icon-facebook.svg" alt="" class="mainOverview__card--socialInfo-img">
+                    <p data-dark="text" class="mainOverview__card--socialInfo-name">@nathanf</p>
+                </div>
+                <p data-dark="textWhite" class="mainOverview__card--followCount">1987</p>
+                <p data-dark="text" class="mainOverview__card--followText">followers</p>
+                <p class="mainOverview__card--newFollow">
+                    <img src="./images/icon-up.svg" alt="" class="mainOverview__card--newFollow-icon">
+                    12 Today
+                </p>
+            </div>
+            <!-- Twitter -->
+            <div data-dark="card" class="mainOverview__card">
+                <div class="mainOverview__card--line mainOverview__card--line-twitter"></div>
+                <div class="mainOverview__card--socialInfo">
+                    <img src="./images/icon-twitter.svg" alt="" class="mainOverview__card--socialInfo-img">
+                    <p data-dark="text" class="mainOverview__card--socialInfo-name">@nathanf</p>
+                </div>
+                <p data-dark="textWhite" class="mainOverview__card--followCount">1044</p>
+                <p data-dark="text" class="mainOverview__card--followText">followers</p>
+                <p class="mainOverview__card--newFollow">
+                    <img src="./images/icon-up.svg" alt="" class="mainOverview__card--newFollow-icon">
+                    99 Today
+                </p>
+            </div>
+
+        </div>
+
+        <div class="mainOverview__row">
+            <!-- Instagram -->
+            <div data-dark="card" class="mainOverview__card">
+                <div class="mainOverview__card--line mainOverview__card--line-instagram"></div>
+                <div class="mainOverview__card--socialInfo">
+                    <img src="./images/icon-instagram.svg" alt="" class="mainOverview__card--socialInfo-img">
+                    <p data-dark="text" class="mainOverview__card--socialInfo-name">@realnathanf</p>
+                </div>
+                <p data-dark="textWhite" class="mainOverview__card--followCount">11k</p>
+                <p data-dark="text" class="mainOverview__card--followText">followers</p>
+                <p class="mainOverview__card--newFollow">
+                    <img src="./images/icon-up.svg" alt="" class="mainOverview__card--newFollow-icon">
+                    1099 Today
+                </p>
+            </div>
+            <!-- Youtube -->
+            <div data-dark="card" class="mainOverview__card">
+                <div class="mainOverview__card--line mainOverview__card--line-youtube"></div>
+                <div class="mainOverview__card--socialInfo">
+                    <img src="./images/icon-youtube.svg" alt="" class="mainOverview__card--socialInfo-img">
+                    <p data-dark="text" class="mainOverview__card--socialInfo-name">Nathan F.</p>
+                </div>
+                <p data-dark="textWhite" class="mainOverview__card--followCount">8239</p>
+                <p data-dark="text" class="mainOverview__card--followText">subscribers</p>
+                <p class="mainOverview__card--newFollow mainOverview__card--newFollow-down">
+                    <img src="./images/icon-down.svg" alt="" class="mainOverview__card--newFollow-icon">
+                    144 Today
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="./main.js"></script>
+</body>
+</html>
